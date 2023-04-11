@@ -7,10 +7,9 @@
   cursor: pointer;
   z-index: 1;
   align-items: center;
-  font-size: 0.8rem;
+  font-size: 1.5vh;
   color: rgb(116, 98, 98);
   user-select: none;
-  font-size: 0.7rem;
 }
 
 .black {
