@@ -1,0 +1,11 @@
+#root {
+  display: flex;
+  max-width: 1280px;
+  padding: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.card {
+  padding: 2em;
+}

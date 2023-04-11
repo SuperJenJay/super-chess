@@ -1,0 +1,38 @@
+.promopiece {
+  display: grid;
+  position: relative;
+  width: 3rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+  align-items: center;
+  font-size: 0.8rem;
+  color: rgb(116, 98, 98);
+  user-select: none;
+  font-size: 0.7rem;
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+}
+
+.bishop {
+  border: 3px solid blue;
+}
+
+.knight {
+  border: 3px solid green;
+}
+
+.rook {
+  border: 3px solid purple;
+}
+
+.queen {
+  border: 3px solid orange;
+}

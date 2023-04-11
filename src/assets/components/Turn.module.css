@@ -1,0 +1,18 @@
+.indicator {
+  display: flex;
+}
+
+.turn {
+  width: 70%;
+}
+
+.check {
+  width: 30%;
+  align-self: center;
+  justify-content: right;
+  font-size: 1.5rem;
+}
+
+.para {
+  margin: 0;
+}

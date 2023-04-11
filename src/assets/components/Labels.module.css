@@ -1,0 +1,27 @@
+.horizontal {
+  position: absolute;
+  width: 80vh;
+  height: 1rem;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  transform: translateY(-25%);
+}
+
+.horizontal p {
+  color: white;
+}
+
+.vertical {
+  position: absolute;
+  height: 80vh;
+  width: 1rem;
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  align-self: center;
+  transform: translate(100%,1%);
+}
+
+.vertical p {
+  color: white;
+}

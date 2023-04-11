@@ -1,0 +1,13 @@
+.box {
+  background-color: white;
+  aspect-ratio: 1/1;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.available {
+  border: 3px solid orange;
+  z-index: 3;
+  cursor: pointer;
+}
