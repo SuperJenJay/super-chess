@@ -106,12 +106,11 @@ const Piece = (props) => {
   };
 
   return (
-    <link
+    <img
       onClick={onClickHandler}
       className={style}
-      rel="icon"
-      type="image/svg+xml"
-      href={`/icons/${color}_${figure}.svg`}
+      alt="icon"
+      src={`/public/icons/${color}_${figure}.svg`}
     />
   );
 };
