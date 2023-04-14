@@ -17,6 +17,40 @@ const Piece = (props) => {
   const style = `${classes.piece} ${classes[enemyColor(color)]} ${
     classes[props.figure]
   }`;
+  const imageSource = () => {
+    switch (color) {
+      case 'white':
+        switch (figure) {
+          case 'pawn':
+            return 'https://svgshare.com/i/s5C.svg';
+          case 'rook':
+            return 'https://svgshare.com/i/s5D.svg';
+          case 'knight':
+            return 'https://svgshare.com/i/s4f.svg';
+          case 'bishop':
+            return 'https://svgshare.com/i/s5o.svg';
+          case 'queen':
+            return 'https://svgshare.com/i/s6T.svg';
+          case 'king':
+            return 'https://svgshare.com/i/s4g.svg';
+        }
+      case 'black':
+        switch (figure) {
+          case 'pawn':
+            return 'https://svgshare.com/i/s5z.svg';
+          case 'rook':
+            return 'https://svgshare.com/i/s5S.svg';
+          case 'knight':
+            return 'https://svgshare.com/i/s6d.svg';
+          case 'bishop':
+            return 'https://svgshare.com/i/s6b.svg';
+          case 'queen':
+            return 'https://svgshare.com/i/s6x.svg';
+          case 'king':
+            return 'https://svgshare.com/i/s6c.svg';
+        }
+    }
+  };
 
   const onClickHandler = () => {
     if (boardCtx.select) {
@@ -105,13 +139,7 @@ const Piece = (props) => {
     boardCtx.selectBoxes(finalMoves, color, figure, column, row);
   };
 
-  return (
-    <img
-      onClick={onClickHandler}
-      className={style}
-      src="https://svgshare.com/i/s5C.svg"
-    />
-  );
+  return <img onClick={onClickHandler} className={style} src={imageSource()} />;
 };
 
 export default Piece;
