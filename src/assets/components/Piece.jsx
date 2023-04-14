@@ -109,7 +109,7 @@ const Piece = (props) => {
     <img
       onClick={onClickHandler}
       className={style}
-      src={`/public/icons/${color}_${figure}.svg`}
+      src="https://svgshare.com/i/s5C.svg"
     />
   );
 };
