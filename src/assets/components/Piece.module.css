@@ -3,13 +3,12 @@
   position: relative;
   width: 6vh;
   aspect-ratio: 1/1;
-  border-radius: 50%;
   cursor: pointer;
   z-index: 1;
   align-items: center;
-  font-size: 1.5vh;
-  color: rgb(116, 98, 98);
   user-select: none;
+  background-color: white;
+  border-radius: 50%;
 }
 
 .black {

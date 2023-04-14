@@ -7,15 +7,16 @@ import {
   isEnemyKingChecked,
   howMuchMovesDoesEnemyHaveAfterThisMove,
   canPerformCastling,
+  enemyColor,
 } from '../functions/helper-functions';
 
 const Piece = (props) => {
   const boardCtx = useContext(BoardContext);
-  const style = `${classes.piece} ${classes[props.color]} ${
-    classes[props.figure]
-  }`;
   const { column, row } = props.coords;
   const { color, figure } = props;
+  const style = `${classes.piece} ${classes[enemyColor(color)]} ${
+    classes[props.figure]
+  }`;
 
   const onClickHandler = () => {
     if (boardCtx.select) {
@@ -105,9 +106,11 @@ const Piece = (props) => {
   };
 
   return (
-    <div className={style} onClick={onClickHandler}>
-      {figure.toUpperCase()}
-    </div>
+    <img
+      onClick={onClickHandler}
+      className={style}
+      src={`/public/icons/${color}_${figure}.svg`}
+    />
   );
 };
 
